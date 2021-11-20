@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id = "@+id/about"
-        android:title="@string/to_about" />
+        android:id = "@+id/optionsMenu"
+        android:title="@string/title_about"
+        android:menuCategory="container"/>
 </menu>

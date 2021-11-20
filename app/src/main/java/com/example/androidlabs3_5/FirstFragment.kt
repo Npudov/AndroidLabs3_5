@@ -10,13 +10,14 @@ import androidx.navigation.fragment.findNavController
 
 
 class FirstFragment : Fragment() {
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val rootView =  inflater.inflate(R.layout.fragment_first, container, false)
 
-        rootView.findViewById<Button>(R.id.to_second_fragment).setOnClickListener {
+        rootView.findViewById<Button>(R.id.bnToSecond).setOnClickListener {
             findNavController().navigate(R.id.action_firstFragment_to_secondFragment)
         }
         return rootView
